@@ -1,0 +1,168 @@
+*{margin: 0;padding: 0;}
+body{	
+	width: 100%;
+	font:14px arial,"Microsoft YaHei",sans-serif;
+	overflow-x: hidden;
+	color:#2e4452;
+}
+a{text-decoration: none;display: inline-block; cursor: pointer;}
+a:hover,a:focus{text-decoration: underline;color:#1F8ACC;}
+ul,li{list-style: none;}
+header{float:left;width:100%;height:70px;position:fixed;top:0;z-index: 999;background-color:#fff;}
+header .logo{margin:15px 0 0 100px;float:left;}
+header .logo img{width:155px;}
+header .logo a{display:inline-block;width:200px;height:100px;}
+a.noticebtn:hover,a.loginbtn:hover{text-decoration: none;color: #1F8ACC;}
+a.noticebtn:hover *,a.loginbtn:hover *{color: #1F8ACC;}
+header .longin{float:right;margin-top:10px;margin-right:80px}
+header .longin span.sel a{color:#1F8ACC;}
+header .longin span{display:inline-block;padding:5px 6px;font-size:14px;margin:0 20px;;text-align:center}
+header .longin a{color:#2e4452;cursor:pointer;width: 100%;}
+header .longin span.sel a,header .longin span.sel ins{color:#1F8ACC;}
+header .longin a:hover{color:#1F8ACC;}
+header .longin a:active{color:#2e4452;}
+header .longin span ins{display: block;font-size:12px;color:#2e4452; text-decoration:none;}
+#myModal{width:550px;margin: 5% auto 0 auto;}
+#myModal .modal-body{height:400px;padding:0px;}
+.news-bg{padding:15px;}
+/*foot*/
+footer{position:absolute;float:left;margin:0 auto;text-align:center;width:100%;color:#b7c9d5;background-color:#2e4452;padding:30px 0px 20px 0px;}
+footer p{padding-top:20px;font-size:14px;margin:0;}
+footer p.coypinfo{font-size:12px;}
+footer a{color:#b7c9d5;}
+footer a:hover{color:#fff;}
+footer .txt{display: inline-block;margin:0 auto;text-align: center;}
+footer .scan{margin:0px 15px 0px 30px;}
+#sideCode ul{margin:0;}
+#sideCode li{background: url(floadbg.png)/*tpa=http://www.chinajey.com/resources/images/floadbg.png*/ no-repeat center center;height:155px;}
+#sideCode li a{color:#fff;text-align:center;display: block;font-size: 14px;background-color:#2e4452;border-radius:100px;width:56px;height:56px;line-height:56px;margin-top:-65px;}
+#sideCode li a:hover,#sideCode li.sel a{background-color:#cd441e;text-decoration: none;}
+#sideCodeqq {
+    position: fixed;
+    right: 10px;
+    bottom: 50%;
+    z-index: 999;
+    border-radius: 5px;
+    padding:10px;
+    border:1px solid #e3e3e3;    
+    background-color:rgba(255,255,255,0.8);font-size: 1em;
+    width:140px;
+    height:140px;
+}
+#sideCodeframe{width: 100%;height:100%;}
+#sideCodeframe li{font-size:14px;text-align:center;background: transparent;border: 1px solid #e3e3e3;border-radius: 3px;margin: 3px;padding: 5px;}
+#sideCodeframe li img{border:0;vertical-align: middle;padding:0px 5px 0px 0px;}
+#sideCodeframe li,#sideCodeframe li a{color:#cd441e;}
+#sideCodeframe li.line{border-top:1px solid #e3e3e3;padding:10px 0px 5px 0px;margin-top:10px;}#sideCodeqq li.line{border-top:1px solid #e3e3e3;padding:10px 0px 5px 0px;margin:10px 0;border-bottom: 1px solid #e3e3e3;}
+
+#back{
+	position: fixed;
+    right: 27px;
+    bottom:10px;
+    z-index: 999;
+    /*border-radius: 5px;*/
+    padding:0;
+    /*border:1px solid #e3e3e3; */   
+    background-color:#2e4452;
+    display:none;
+}
+#back a{background: url(top.png)/*tpa=http://www.chinajey.com/resources/images/top.png*/ no-repeat left top;display: block;width:40px;height:37px;}
+#back a:hover{background: url(top.png)/*tpa=http://www.chinajey.com/resources/images/top.png*/ no-repeat right bottom;display: block;width:40px;height:37px;}
+.lists{display: none;
+	width:40px;
+	border-color:#ccc;
+	position:relative;
+}
+.lists:before,
+.lists:after{
+	content:"";
+	position:absolute;
+	top:7px;
+	left:3px;
+	width:18px;
+	height:2px;
+	border-radius:1px;
+	background:#ccc;
+	-webkit-transition:all 0.25s ease;
+	     -o-transition:all 0.25s ease;
+	        transition:all 0.25s ease;
+}
+.lists.lsc:before,
+.lists.lsc:after{
+	background:#999;
+}
+.lists:after{
+	top:16px;
+}
+.lists.close:before{
+	left:3px;
+	top:11px;
+	-webkit-transform:rotate(45deg);
+	     -o-transform:rotate(45deg);
+	        transform:rotate(45deg);
+}
+.lists.close:after{
+	left:3px;
+	top:11px;
+	-webkit-transform:rotate(-45deg);
+	     -o-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+#content .div-p-nop p{padding-bottom: 0px;padding-top: 0;}
+#content .div-p-nop p:last-child{padding-bottom: 10px;}
+#content .div-p-nop p strong{margin-top: 30px;display: block;}
+.div-nav-news{text-align: center;}
+.div-nav-news a{text-decoration: none;border:1px solid #2e4452;border-radius: 2px; line-height: 30px;width: 100px;text-align:center;margin: 0 20px;}
+@media only screen and (max-width: 1280) {
+	#myModal{width:500px;margin:5% auto 0 auto;}
+}
+@media only screen and (max-width: 1024px){
+	header .logo{margin:20px 0 0 0px;}
+	header .logo a{width:auto;height:auto;}
+	header .longin{margin-right:10px;}
+	header .longin span{padding:5px 10px;font-size:16px;margin:0 5px;}
+	#content{width:96%;}	
+}
+@media only screen and (max-width: 768px){
+	header .logo{margin:20px 0 0 0px;}
+	header .logo a{width:auto;height:auto;}
+	header .longin{margin-right:10px;}
+	header .longin span{padding:5px 0px;font-size:16px;margin:0 1px;}
+	#content{width:94%;}
+	#myModal{width:90%;margin: 10% auto 0 auto;}
+	#myModal .modal-body{height:60%;padding:0px;}
+	.news-bg td{float:left;width:100%;}
+	header .logo img{max-width: 80%}
+}
+@media only screen and (max-width: 479px)  {
+	.banner{float:left;width:100%;height:450px;background:url(banner.jpg)/*tpa=http://www.chinajey.com/resources/images/banner.jpg*/ no-repeat 50% 30px;background-size: cover;}
+	.banner1{float:left;width:100%;height:450px;background:url(banner1.jpg)/*tpa=http://www.chinajey.com/resources/images/banner1.jpg*/ no-repeat 20% 30px;background-size: cover;}
+	.banner2{float:left;width:100%;height:450px;background:url(banner2.jpg)/*tpa=http://www.chinajey.com/resources/images/banner2.jpg*/ no-repeat 35% 10px;background-size: cover;}
+	header .logo{margin:0 auto;width:100%;float: none;}
+	header .logo a{width:auto;height:auto;}
+	header .longin{margin-right:0px;width:50%;margin-top:0}
+	header .longin span{padding:5px 0px;font-size:12px;margin:0;width:16.66%;float:left}
+	#content{width:auto;padding: 0 15px;}
+	#myModal{width:90%;margin: 10% auto 0 auto;}
+	#myModal .modal-body{height:60%;padding:0px;}
+	header{height: 40px;}
+	header .longin span{display: block;float: none;width: 50%;}
+	header .logo img{width: 100px;margin: 5px 0 0 30px;display: block;}
+	header .longin span ins{font-size:10px;color: #fff;}
+	header .longin a{color: #fff;}
+	.lists{display: block;border:2px solid #ccc; border-radius:3px;right: 10px;position: absolute;top: 6px;width: 25px;height: 25px;z-index: 10;}
+	.longin{display:none;position:absolute;width:50%;height:800px;top:0;background: rgba(0,0,0,0.8);z-index: 1;right: 0;padding-top: 20px;}
+	#sideCode{top:20%;left: 0;}
+	#sideCode li a{font-size:12px;width:40px;height:40px;line-height: 40px;}
+	#sideCode li:first-child{height: 80px;}
+	#sideCode li {background: url(floadbg.png)/*tpa=http://www.chinajey.com/resources/images/floadbg.png*/ no-repeat center -70px;height: 120px;}
+	.pagethree .img-text{top:5%}
+	.img-text h1{font-size: 1.4em;}
+	.pic_list img{width: 33.3%; float: left;}
+	.col-6{width:100%;}
+	.col-6 p{font-size: 12px;}
+}
+@media only screen and (max-width: 320px)  {
+	.pic_list img{width: 33.3%;}
+}
+.txd{color: #0ae;text-decoration: underline;}
