@@ -1,0 +1,2 @@
+# telepro-autofix
+根据teleport pro的下载的网页的文件加载url路径，将文件整理到相应的文件目录结构。teleport自带这个功能，这里是实现以下它的功能
