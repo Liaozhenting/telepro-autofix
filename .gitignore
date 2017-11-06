@@ -1,2 +1,3 @@
 /autowrite/node_modules
 /autowrite/package-lock.json
+*/.vscode

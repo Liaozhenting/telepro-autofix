@@ -31,7 +31,7 @@ function mkdirsSync(dirpath, mode) {
     return false;
   }
 }
-//以下用法  创建的目录是一样，不会创建文件
+//以下用法!!注意最后面的'/'  创建的目录是一样，不会创建文件
 //mkdirsSync('./to/lid/');
 //mkdirsSync('./to/lid/index.html');
 module.exports = mkdirsSync;
