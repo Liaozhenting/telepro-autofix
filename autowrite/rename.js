@@ -12,13 +12,6 @@ let DealAll = function (workpath) {
     try {
       walker = walk.walk(workpath, { followLinks: false });
       walker.on('file', function (roots, stat, next) {
-        // fs.rename(stat.name, , function (err) {
-        //   if (err) {
-        //     throw err;
-        //   } else {
-        //     console.log('done');
-        //   }
-        // })
         Rename(roots,stat.name);
         next()
       })
@@ -35,8 +28,9 @@ let DealAll = function (workpath) {
 }
 
 let Rename = function(roots,name){
-  let reg = new RegExp('-ver=\\S+\\.\\S+');
-  let newName = name.replace(reg,'');
+  // let reg = new RegExp('-ver=\\S+\\.\\S+');
+  // let newName = name.replace(reg,'');
+  let newName = NewName(name,'-v');
   console.log(newName)
   fs.renameSync(path.join(roots,name),path.join(roots,newName), function (err) {
     if (err) {
@@ -45,6 +39,14 @@ let Rename = function(roots,name){
       console.log('done');
     }
   })
+}
+
+let NewName = function(old,type){
+  let stategy ={
+    '-ver':new RegExp('-ver=\\S+\\.\\S+'),
+    '-v':new RegExp('-v=\\S+')
+  }
+  return old.replace(stategy[type],'');
 }
 
 let Main =async function(){
